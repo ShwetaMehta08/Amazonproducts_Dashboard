@@ -70,5 +70,3 @@ This dashboard empowered Amazon’s stakeholders to shift from guesswork to data
 Here’s a preview of the dashboard showcasing the key metrics, sales trends, product performance, and customer feedback analysis:
 
 ![Amazon Sales Dashboard](https://github.com/ShwetaMehta08/Amazonproducts_Dashboard/blob/main/Amazonproducts_Dashboard.png)
-
-https://github.com/ShwetaMehta08/Amazonproducts_Dashboard/blob/main/Amazonproducts_Dashboard.png
