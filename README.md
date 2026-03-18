@@ -30,8 +30,6 @@ The following tools and technologies were utilized to create this Power BI dashb
 
 I used a sample dataset provide as part of an online Power BI learning resource. From this dataset, I extracted relevant data fields — like product names, categories, sales figures, and customer reviews — and transformed them to build a meaningful dashboard that simulates real-world business scenarios.
 
-You can access the dataset from the tutorial’s description or the course materials shared by the creator.
-
 ## ✅ 5. Walkthrough of Key Visuals
 
 The dashboard includes multiple visuals to give a comprehensive view of the business performance:
