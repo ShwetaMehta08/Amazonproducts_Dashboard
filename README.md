@@ -1,69 +1,108 @@
 # 📊 Amazon Sales Analysis Dashboard – Power BI
 
-## ✅ 1. Business Problem
+✅ 1. Business Problem
 
-Amazon’s business team was struggling to track sales trends and understand customer feedback across various product categories. They lacked a clear view of which products or categories were driving growth and which were underperforming. This made it difficult for them to plan marketing strategies, manage inventory, and improve customer satisfaction. With scattered data and limited visibility, they needed a solution to consolidate information and gain actionable insights.
+Amazon’s business team lacked a clear and centralized view of sales performance and customer feedback across product categories.
 
-## ✅ 2. Goal of the Dashboard
+This made it difficult to:
 
-The objective of this project was to build an interactive and centralized Power BI dashboard that helps Amazon’s team monitor sales and customer feedback efficiently. The dashboard was designed to:
+Track sales trends over time
 
-✔ Track year-to-date and quarterly sales trends.  
-✔ Identify top-performing product categories and individual products.  
-✔ Highlight customer preferences through review analysis.  
-✔ Provide a clear view of performance across regions and timeframes.
+Identify top-performing and underperforming products
 
-## ✅ 3. Tech Stack
+Understand customer preferences through reviews
 
-The following tools and technologies were utilized to create this Power BI dashboard:
+Make informed decisions related to marketing and inventory
 
-✔ **Power BI Desktop** – Used to create interactive and visually appealing reports and dashboards by connecting, transforming, and visualizing data.  
-✔ **DAX (Data Analysis Expressions)** – Used for creating measures and calculated columns to perform advanced data analysis.  
-✔ **Power Query Editor** – Used for data cleaning, shaping, and transforming raw data into usable formats.  
-✔ **Excel/CSV Files** – Source data files used for sales, product categories, and customer reviews.  
-✔ **Data Modeling** – Defined relationships between datasets to ensure accurate reporting and analysis.  
-✔ **Visualization Tools** – Line charts, column charts, heat maps, and bar charts were used to display trends, patterns, and insights clearly.  
-✔ **Filters and Slicers** – Enabled dynamic data exploration by allowing users to view data by product category and quarter.  
-✔ **Storytelling Techniques** – Structured visuals to guide stakeholders through data insights and support decision-making.
+✅ 2. Goal of the Dashboard
 
-## ✅ 4. Data Source
+The goal of this project is to build an interactive Power BI dashboard that:
 
-I used a sample dataset provide as part of an online Power BI learning resource. From this dataset, I extracted relevant data fields — like product names, categories, sales figures, and customer reviews — and transformed them to build a meaningful dashboard that simulates real-world business scenarios.
+✔ Tracks Year-to-Date (YTD) and Quarter-to-Date (QTD) sales
+✔ Identifies top-performing products and categories
+✔ Analyzes customer feedback using review data
+✔ Provides insights into sales trends over time
 
-## ✅ 5. Walkthrough of Key Visuals
+✅ 3. Tech Stack
 
-The dashboard includes multiple visuals to give a comprehensive view of the business performance:
+Power BI Desktop – Data visualization & dashboard creation
 
-- **YTD Sales by Month (Line Chart)**  
-  – Visualizes month-over-month sales to detect seasonal trends and revenue patterns.
+DAX (Data Analysis Expressions) – Calculated measures
 
-- **YTD Sales by Week (Column Chart)**  
-  – Tracks weekly fluctuations to understand short-term changes in sales.
+Power Query Editor – Data cleaning & transformation
 
-- **Sales by Product Category (Heat Map/Text Visual)**  
-  – Provides an overview of how different categories are contributing to total revenue.
+Excel / CSV – Data source
 
-- **Top 5 Products by YTD Sales (Bar Chart)**  
-  – Focuses on products generating the most revenue to prioritize supply chain and marketing.
+Data Modeling – Relationships between tables
 
-- **Top 5 Products by YTD Reviews (Bar Chart)**  
-  – Analyzes customer feedback, helping identify products with high satisfaction and improving customer experience.
+Charts Used – Line, Column, Bar, Table
 
-## ✅ 6. Highlighting the Insights
+Filters & Slicers – Interactive exploration
 
-Through this dashboard, I found that **Men’s Shoes and Cameras** were driving the highest revenue, while categories like **Mobile & Accessories** had very low sales. Additionally, customer reviews revealed that products like **SanDisk’s memory cards** were receiving the most positive feedback, indicating strong customer trust in these products. The data also showed that certain regions had seasonal drops in sales, guiding the team to focus their strategies where improvement was needed most.
+✅ 4. Data Source
 
-## ✅ 7. Business Impact
+The dataset used in this project is a publicly available sample dataset representing Amazon product sales, categories, and customer reviews. It includes transaction-level data used to simulate real-world business analysis scenarios.
 
-This dashboard empowered Amazon’s stakeholders to shift from guesswork to data-driven decision-making. By analyzing sales and customer feedback, they could:
+✅ 5. Data Cleaning & Preparation
 
-✔ Optimize marketing efforts by targeting high-performing categories.  
-✔ Adjust inventory management based on product demand.  
-✔ Improve customer satisfaction by addressing feedback trends.  
-✔ Identify underperforming products and take corrective action.  
-✔ Plan for future growth by leveraging historical patterns and insights.
+Removed null and duplicate values
 
-## ✅ 8. Screenshots / Demo
+Converted data types (Date, Numeric)
+
+Created a Date Table
+
+Established relationships between tables
+
+Created derived columns (Month, Week, Quarter)
+
+✅ 6. Key Metrics (DAX)
+YTD Sales = TOTALYTD([Total Sales], Date[Date])
+
+QTD Sales = TOTALQTD([Total Sales], Date[Date])
+
+YTD Products Sold = TOTALYTD(SUM(Sales[Quantity]), Date[Date])
+
+YTD Reviews = TOTALYTD(SUM(Reviews[Review Count]), Date[Date])
+
+✅ 7. Dashboard Features
+
+KPI Cards for quick overview
+
+Monthly sales trend (Line chart)
+
+Weekly sales analysis (Column chart)
+
+Category-wise sales analysis (Table)
+
+Top 5 products by sales (Bar chart)
+
+Top 5 products by reviews (Bar chart)
+
+✅ 8. Key Insights
+
+📈 Sales show upward trend in later months indicating seasonal growth
+
+🛒 Categories like Men’s Shoes and Cameras drive major revenue
+
+📉 Some categories underperform, indicating optimization opportunity
+
+⭐ Products with high reviews indicate strong customer satisfaction
+
+📊 Weekly trends reveal short-term fluctuations in sales
+
+✅ 9. Business Impact
+
+Helps identify high-performing products
+
+Supports inventory planning
+
+Improves marketing targeting
+
+Enhances customer satisfaction strategy
+
+Enables data-driven decision-making
+
+✅ 10. Dashboard Preview
 
 Here’s a preview of the dashboard showcasing the key metrics, sales trends, product performance, and customer feedback analysis:
 
