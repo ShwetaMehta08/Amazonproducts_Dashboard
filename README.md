@@ -62,7 +62,22 @@ The dataset used in this project is a publicly available sample dataset represen
 
 ---
 
-## ✅ 6. Dashboard Features
+## ✅ 6. Key Metrics (DAX)
+
+The following DAX measures were created to analyze business performance:
+
+```DAX
+YTD Sales = TOTALYTD([Total Sales], Date[Date])
+
+QTD Sales = TOTALQTD([Total Sales], Date[Date])
+
+YTD Products Sold = TOTALYTD(SUM(Sales[Quantity]), Date[Date])
+
+YTD Reviews = TOTALYTD(SUM(Reviews[Review Count]), Date[Date])
+
+---
+
+## ✅ 7. Dashboard Features
 
 - KPI Cards for quick overview  
 - Monthly sales trend (**Line Chart**)  
@@ -73,7 +88,7 @@ The dataset used in this project is a publicly available sample dataset represen
 
 ---
 
-## ✅ 7. Key Insights
+## ✅ 8. Key Insights
 
 - 📈 Sales show upward trend in later months indicating seasonal growth  
 - 🛒 Categories like **Men’s Shoes and Cameras** drive major revenue  
@@ -83,7 +98,7 @@ The dataset used in this project is a publicly available sample dataset represen
 
 ---
 
-## ✅ 8. Business Impact
+## ✅ 9. Business Impact
 
 - Helps identify **high-performing products**  
 - Supports **inventory planning**  
@@ -93,7 +108,7 @@ The dataset used in this project is a publicly available sample dataset represen
 
 ---
 
-## ✅ 9. Dashboard Preview
+## ✅ 10. Dashboard Preview
 
 ![Amazon Sales Dashboard](Amazonproducts_Dashboard.png)
 
