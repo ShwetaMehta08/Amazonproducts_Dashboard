@@ -2,6 +2,12 @@
 
 ---
 
+## ✨ Project Summary
+
+This project analyzes Amazon product sales and customer feedback using Power BI to uncover trends, identify high-performing products, and support data-driven decision-making.
+
+---
+
 ## ✅ 1. Business Problem
 
 Amazon’s business team lacked a clear and centralized view of sales performance and customer feedback across product categories.
@@ -56,49 +62,39 @@ The dataset used in this project is a publicly available sample dataset represen
 
 ---
 
-## ✅ 6. Key Metrics (DAX)
+## ✅ 6. Dashboard Features
 
-```DAX
-YTD Sales = TOTALYTD([Total Sales], Date[Date])
+- KPI Cards for quick overview  
+- Monthly sales trend (**Line Chart**)  
+- Weekly sales analysis (**Column Chart**)  
+- Category-wise sales analysis (**Table**)  
+- Top 5 products by sales (**Bar Chart**)  
+- Top 5 products by reviews (**Bar Chart**)  
 
-QTD Sales = TOTALQTD([Total Sales], Date[Date])
+---
 
-YTD Products Sold = TOTALYTD(SUM(Sales[Quantity]), Date[Date])
+## ✅ 7. Key Insights
 
-YTD Reviews = TOTALYTD(SUM(Reviews[Review Count]), Date[Date])
-✅ 7. Dashboard Features
-KPI Cards for quick overview
+- 📈 Sales show upward trend in later months indicating seasonal growth  
+- 🛒 Categories like **Men’s Shoes and Cameras** drive major revenue  
+- 📉 Some categories underperform, indicating optimization opportunity  
+- ⭐ Products with high reviews indicate strong customer satisfaction  
+- 📊 Weekly trends reveal short-term fluctuations in sales  
 
-Monthly sales trend (Line Chart)
+---
 
-Weekly sales analysis (Column Chart)
+## ✅ 8. Business Impact
 
-Category-wise sales analysis (Table)
+- Helps identify **high-performing products**  
+- Supports **inventory planning**  
+- Improves **marketing targeting**  
+- Enhances **customer satisfaction strategy**  
+- Enables **data-driven decision-making**  
 
-Top 5 products by sales (Bar Chart)
+---
 
-Top 5 products by reviews (Bar Chart)
+## ✅ 9. Dashboard Preview
 
-✅ 8. Key Insights
-📈 Sales show upward trend in later months indicating seasonal growth
+![Amazon Sales Dashboard](Amazonproducts_Dashboard.png)
 
-🛒 Categories like Men’s Shoes and Cameras drive major revenue
-
-📉 Some categories underperform, indicating optimization opportunity
-
-⭐ Products with high reviews indicate strong customer satisfaction
-
-📊 Weekly trends reveal short-term fluctuations in sales
-
-✅ 9. Business Impact
-Helps identify high-performing products
-
-Supports inventory planning
-
-Improves marketing targeting
-
-Enhances customer satisfaction strategy
-
-Enables data-driven decision-making
-
-✅ 10. Dashboard Preview
+---
