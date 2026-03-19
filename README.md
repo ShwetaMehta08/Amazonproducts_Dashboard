@@ -66,3 +66,39 @@ QTD Sales = TOTALQTD([Total Sales], Date[Date])
 YTD Products Sold = TOTALYTD(SUM(Sales[Quantity]), Date[Date])
 
 YTD Reviews = TOTALYTD(SUM(Reviews[Review Count]), Date[Date])
+✅ 7. Dashboard Features
+KPI Cards for quick overview
+
+Monthly sales trend (Line Chart)
+
+Weekly sales analysis (Column Chart)
+
+Category-wise sales analysis (Table)
+
+Top 5 products by sales (Bar Chart)
+
+Top 5 products by reviews (Bar Chart)
+
+✅ 8. Key Insights
+📈 Sales show upward trend in later months indicating seasonal growth
+
+🛒 Categories like Men’s Shoes and Cameras drive major revenue
+
+📉 Some categories underperform, indicating optimization opportunity
+
+⭐ Products with high reviews indicate strong customer satisfaction
+
+📊 Weekly trends reveal short-term fluctuations in sales
+
+✅ 9. Business Impact
+Helps identify high-performing products
+
+Supports inventory planning
+
+Improves marketing targeting
+
+Enhances customer satisfaction strategy
+
+Enables data-driven decision-making
+
+✅ 10. Dashboard Preview
