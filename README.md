@@ -62,22 +62,7 @@ The dataset used in this project is a publicly available sample dataset represen
 
 ---
 
-## ✅ 6. Key Metrics (DAX)
-
-The following DAX measures were created to analyze business performance:
-
-```DAX
-YTD Sales = TOTALYTD([Total Sales], Date[Date])
-
-QTD Sales = TOTALQTD([Total Sales], Date[Date])
-
-YTD Products Sold = TOTALYTD(SUM(Sales[Quantity]), Date[Date])
-
-YTD Reviews = TOTALYTD(SUM(Reviews[Review Count]), Date[Date])
-
----
-
-## ✅ 7. Dashboard Features
+## ✅ 6. Dashboard Features
 
 - KPI Cards for quick overview  
 - Monthly sales trend (**Line Chart**)  
@@ -88,7 +73,7 @@ YTD Reviews = TOTALYTD(SUM(Reviews[Review Count]), Date[Date])
 
 ---
 
-## ✅ 8. Key Insights
+## ✅ 7. Key Insights
 
 - 📈 Sales show upward trend in later months indicating seasonal growth  
 - 🛒 Categories like **Men’s Shoes and Cameras** drive major revenue  
@@ -98,7 +83,7 @@ YTD Reviews = TOTALYTD(SUM(Reviews[Review Count]), Date[Date])
 
 ---
 
-## ✅ 9. Business Impact
+## ✅ 8. Business Impact
 
 - Helps identify **high-performing products**  
 - Supports **inventory planning**  
@@ -108,7 +93,7 @@ YTD Reviews = TOTALYTD(SUM(Reviews[Review Count]), Date[Date])
 
 ---
 
-## ✅ 10. Dashboard Preview
+## ✅ 9. Dashboard Preview
 
 ![Amazon Sales Dashboard](Amazonproducts_Dashboard.png)
 
